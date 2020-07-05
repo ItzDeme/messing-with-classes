@@ -1,0 +1,58 @@
+#include <iostream>
+
+using namespace std;
+
+// Function to get the missing number 
+class Acolyte
+{
+public:
+
+  void buff ()
+  {
+    cout << "Blessing!" << endl;
+  }
+  void agi ()
+  {
+    cout << "Increase Agility!" << endl;
+  }
+  void heal ()
+  {
+    cout << "Heal, that will be 3k" << endl;
+  }
+
+};
+
+class Priest:public Acolyte
+{
+public:
+  void buff ()
+  {
+    cout << "Kyrie EPILEPSE" << endl;
+  }
+};
+class Hpriest:public Priest
+{
+public:
+
+  void heal ()
+  {
+    cout << "No" << endl;
+  }
+
+
+};
+
+// Driver Code 
+int
+main ()
+{
+  Acolyte sophalof;
+  sophalof.heal ();
+
+  Priest sashaa;
+  sashaa.heal ();
+
+  Hpriest deme;
+  deme.heal ();
+
+}
