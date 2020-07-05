@@ -46,7 +46,7 @@ public:
 int
 main ()
 {
-  Acolyte sophalof;
+  Acolyte newtogame;
   sophalof.heal ();
 
   Priest sashaa;
